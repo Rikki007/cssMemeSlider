@@ -5,3 +5,69 @@
   font-weight: 400;
   src: url('./font/alkatra-v3-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #b3b2b8;
+  font-family: Alkatra;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_container_school {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.2s;
+}
+
+.header_container_school:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.creator {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.2s;
+}
+
+.creator:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}

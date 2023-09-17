@@ -296,7 +296,7 @@ input[name="slide_list"] {
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 490px) {
   .header_container_meme-slider {
     font-size: 1.5rem;
     font-weight: 600;

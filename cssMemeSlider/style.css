@@ -252,11 +252,11 @@ input[name="slide_list"] {
 
   .main_container_content_text {
     width: 116rem;
-    gap: 14.5rem;
+    gap: 0;
   }
   
   .main_container_content_text_description {
-    width: 14.5rem;
+    width: 29rem;
   }
 
   #first:checked ~ .slip {
@@ -293,5 +293,68 @@ input[name="slide_list"] {
 
   .footer_container {
     margin: 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .header_container_meme-slider {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .header_container {
+    margin: 0 1rem 0;
+  }
+
+  .main_container {
+    width: 22rem;
+  }
+
+  .main_container_content_slide {
+    width: 88rem;
+  }
+  
+  .main_container_content_slide_pic {
+    width: 22rem;
+  }
+
+  .main_container_content_text {
+    width: 88rem;
+  }
+  
+  .main_container_content_text_description {
+    width: 22rem;
+  }
+
+  #first:checked ~ .slip {
+    margin-left: 0;
+  }
+  
+  #second:checked ~ .slip {
+    margin-left: -22rem;
+  }
+  
+  #third:checked ~ .slip {
+    margin-left: -44rem;
+  }
+  
+  #fourth:checked ~ .slip {
+    margin-left: -66rem;
+  }
+  
+  #first:checked ~ .slip-text {
+    margin-left: -66rem;
+  }
+  
+  #second:checked ~ .slip-text {
+    margin-left: -44rem;
+  }
+  
+  #third:checked ~ .slip-text {
+    margin-left: -22rem;
+  }
+  
+  #fourth:checked ~ .slip-text {
+    margin-left: 0;
   }
 }

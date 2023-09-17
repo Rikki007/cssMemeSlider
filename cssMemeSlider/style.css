@@ -29,7 +29,6 @@ body {
 
 .header {
   max-width: 1440px;
-  margin: 0 auto;
 }
 
 .header_container {
@@ -52,25 +51,22 @@ body {
 
 .main {
   max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
 }
 
 .main_container {
-  width: 500px;
-  height: 400px;
-  overflow: hidden;
+  width: 40rem;
+  margin: 0 auto;
 }
 
 .main_container_content {
-  width: 400%;
-  height: 100%;
-  margin: 0;
-  gap: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 20rem 20rem;
+  grid-template-rows: 0 0 30rem 10rem;
+  overflow: hidden;
+}
+
+.main_container_content > :nth-child(5) {
+  grid-column: 1 / span 2;
 }
 
 input[name="slide_list"] {
@@ -80,29 +76,60 @@ input[name="slide_list"] {
 }
 
 .main_container_content_slide {
-  width: 25%;
-  transition: 0.5s;
+  width: 160rem;
+  height: 100%;
+  display: flex;
+  transition: 0.6s;
 }
 
 .main_container_content_slide_pic {
-  width: 100%;
-  height: 100%;
+  width: 40rem;
+}
+
+.main_container_content_text {
+  margin: auto;
+  width: 160rem;
+  display: flex;
+  gap: 20rem;
+  transition: 0.6s;
+}
+
+.main_container_content_text_description {
+  width: 20rem;
 }
 
 .main_container_navigation {
-  width: 180px;
+  width: 10rem;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .main_container_navigation_controller {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid rgb(23, 23, 65);
-  background-color: rgb(23, 23, 65);
+  width: 36px;
+  height: 36px;
+  padding: 7px;
   cursor: pointer;
+}
+
+.fake {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgb(126, 126, 224);
+  border: 2px solid rgb(126, 126, 224);
+  transition: 0.3s;
+}
+
+.main_container_navigation_controller:hover > .fake {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.main_container_navigation_controller:active > .fake {
+  background-color: #b3b2b8;
+  border: 2px solid rgb(126, 126, 224);
 }
 
 #first:checked ~ .slip {
@@ -110,17 +137,32 @@ input[name="slide_list"] {
 }
 
 #second:checked ~ .slip {
-  margin-left: -25%;
+  margin-left: -40rem;
 }
 
 #third:checked ~ .slip {
-  margin-left: -50%;
+  margin-left: -80rem;
 }
 
 #fourth:checked ~ .slip {
-  margin-left: -75%;
+  margin-left: -120rem;
 }
 
+#first:checked ~ .slip-text {
+  margin-left: -120rem;
+}
+
+#second:checked ~ .slip-text {
+  margin-left: -80rem;
+}
+
+#third:checked ~ .slip-text {
+  margin-left: -40rem;
+}
+
+#fourth:checked ~ .slip-text {
+  margin-left: 0;
+}
 .footer {
   max-width: 1440px;
   margin: 0 auto;

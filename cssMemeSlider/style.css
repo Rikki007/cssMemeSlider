@@ -29,6 +29,7 @@ body {
 
 .header {
   max-width: 90rem;
+  margin: 0 auto;
 }
 
 .header_container {
@@ -51,6 +52,7 @@ body {
 
 .main {
   max-width: 90rem;
+  margin: 0 auto;
 }
 
 .main_container {
@@ -122,6 +124,11 @@ input[name="slide_list"] {
   transition: 0.2s;
 }
 
+input[type='radio']:checked ~label > .fake {
+  background-color: red;
+  border: 3px solid rgb(126, 126, 224);
+}
+
 .main_container_navigation_controller:hover > .fake {
   background-color: rgb(255, 255, 255);
 }
@@ -157,6 +164,7 @@ input[name="slide_list"] {
 #fourth:checked ~ .slip-text {
   margin-left: 0;
 }
+
 .footer {
   max-width: 90rem;
   margin: 0 auto;
@@ -246,5 +254,9 @@ input[name="slide_list"] {
   
   #fourth:checked ~ .slip-text {
     margin-left: 0;
+  }
+
+  .footer_container {
+    margin: 0 1rem 0;
   }
 }

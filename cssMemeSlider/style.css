@@ -121,12 +121,47 @@ input[name="slide_list"] {
   height: 1.37rem;
   border-radius: 50%;
   background-color: rgb(126, 126, 224);
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
-input[type='radio']:checked ~label > .fake {
-  background-color: red;
+#first:checked ~ .main_container_navigation > label > .fake1{
+  background-color: #b3b2b8;
   border: 3px solid rgb(126, 126, 224);
+}
+
+#first:checked ~ .main_container_navigation > label:hover > .fake1{
+  background-color: #b3b2b8;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+#second:checked ~ .main_container_navigation > label > .fake2{
+  background-color: #b3b2b8;
+  border: 3px solid rgb(126, 126, 224);
+}
+
+#second:checked ~ .main_container_navigation > label:hover > .fake2{
+  background-color: #b3b2b8;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+#third:checked ~ .main_container_navigation > label > .fake3{
+  background-color: #b3b2b8;
+  border: 3px solid rgb(126, 126, 224);
+}
+
+#third:checked ~ .main_container_navigation > label:hover > .fake3{
+  background-color: #b3b2b8;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+#fourth:checked ~ .main_container_navigation > label > .fake4{
+  background-color: #b3b2b8;
+  border: 3px solid rgb(126, 126, 224);
+}
+
+#fourth:checked ~ .main_container_navigation > label:hover > .fake4{
+  background-color: #b3b2b8;
+  border: 3px solid rgb(255, 255, 255);
 }
 
 .main_container_navigation_controller:hover > .fake {
